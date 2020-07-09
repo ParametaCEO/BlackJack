@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1594169897 source:c:\users\parameta\onedrive\devcpp-wkspce\decktesting\main.cpp
+	<iostream>
+	"..\CardsRepo\Deck.h"
+	"..\CardsRepo\Card.h"
+
+1594169897 epo\Card.h"
+
+1594169741 c:\users\parameta\onedrive\devcpp-wkspce\cardsrepo\deck.h
+	<list>
+	"Card.h"
+
+1594169841 
+
+1594056443 c:\users\parameta\onedrive\devcpp-wkspce\cardsrepo\card.h
+	<string>
+
+1594084222 source:c:\users\parameta\onedrive\devcpp-wkspce\cardsrepo\card.cpp
+	"Card.h"
+
+1594169841 source:c:\users\parameta\onedrive\devcpp-wkspce\cardsrepo\deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594102224 source:/home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Card.cpp
+	"Card.h"
+
+1594074446 /home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Card.h
+	<string>
+
+1594187898 source:/home/parameta/Documents/DevCPP-WkSpce/DeckTesting/main.cpp
+	<iostream>
+	"..\CardsRepo\Deck.h"
+	"..\CardsRepo\Card.h"
+
+1594226582 source:/home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594187742 /home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1594302831 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/DeckTesting/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+
+1594102224 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1594074446 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.h
+	<string>
+
+1594252757 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594249998 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+

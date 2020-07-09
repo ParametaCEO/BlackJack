@@ -1,0 +1,22 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
+
+class Player
+{
+    public:
+        Player(argName);
+        virtual ~Player();
+        Player(const Player& other);
+        Player& operator=(const Player& other);
+
+        int GetiChips() { return iChips; }
+        void SetiChips(int val) { iChips = val; }
+
+    protected:
+
+    private:
+        int iChips;
+};
+
+#endif // PLAYER_H

@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1594102224 source:/home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Card.cpp
+	"Card.h"
+
+1594074446 /home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Card.h
+	<string>
+
+1594250845 source:/home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594249998 /home/parameta/Documents/DevCPP-WkSpce/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1594240640 source:/home/parameta/Documents/DevCPP-WkSpce/DeckTesting/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+
