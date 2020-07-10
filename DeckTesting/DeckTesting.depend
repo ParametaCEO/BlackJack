@@ -49,7 +49,7 @@
 	<list>
 	"Card.h"
 
-1594302831 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/DeckTesting/main.cpp
+1594414453 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/DeckTesting/main.cpp
 	<iostream>
 	"Deck.h"
 	"Card.h"
@@ -60,7 +60,7 @@
 1594074446 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.h
 	<string>
 
-1594252757 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
+1594413497 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
 	"Card.h"
 	"Deck.h"
 	<list>
@@ -68,7 +68,7 @@
 	<stdlib.h>
 	<time.h>
 
-1594249998 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.h
+1594413288 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.h
 	<list>
 	"Card.h"
 

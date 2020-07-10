@@ -14,11 +14,16 @@ using namespace std;
 
 int main() {
     Deck frenchDeck;
-    Deck spainDeck(Deck(true,true));
-	Card c;
+    Hand playerHand;
+    frenchDeck.setShuffled();
 
-    frenchDeck = spainDeck;
+    playerHand.pushCard(frenchDeck.getTopCard()); //First Hit
+    playerHand.pushCard(frenchDeck.getTopCard()); //Second Hit
+    if(playerHand.isBlackjack())
+        cout << "Blackjack!!! Viva las Vegas!!!" << endl;
+    cout << "Hand Value is...\n" << playerHand.getValue() << endl;
 
+/*
 	do{
 		c = frenchDeck.getTopCard();
 		c.show();
@@ -27,7 +32,9 @@ int main() {
 		c.show();
 		cout << c.getStrCard() << endl; // prints card by card
 
-	}while(spainDeck.getSizeDeck());
+	}while(spainDeck.getSizeDeck());*/
 	return 0;
 }
+
+
 
