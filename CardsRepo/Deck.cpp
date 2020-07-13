@@ -173,24 +173,25 @@ void Deck::setSizeDeck(const int argSize){
 }
 
 /********************************
-*			Hand Class		    	*
+*			Hand Class			*
 ********************************/
 
 Hand::Hand():Deck(false,false){
-	iHandValue = 0;
+	iValue = 0;
 	bBlackjack = false;
 }
 
 int Hand::getValue(){
-
-	iHandValue=0;
-
+	iValue=0;
 	if(getSizeDeck()){
-		for(iterCards = cards.begin(); iterCards != cards.end(); ++iterCards){
-			iHandValue+= iterCards->getValue();
+		Card c;
+		for(int i=0; i<getSizeDeck(); i++){
+			c =getTopCard();
+			iValue+= c.getValue();
+			pushCard(c);
 		}
 	}
-	return iHandValue;
+	return iValue;
 }
 
 bool Hand::isBlackjack(){
@@ -201,12 +202,15 @@ bool Hand::isBlackjack(){
 	return bBlackjack;
 }
 
-Hand& Hand::operator=(Hand &&other) {
+void Hand::operator=(Hand other) {
+    Card c;
 	setbJokers(other.getbJokers());
 	setSizeDeck(other.getSizeDeck());
-    cards = other.cards;
+
+	for (int i = 0; i < getSizeDeck(); i++) {
+		c = other.getTopCard();
+		pushCard(c);
+	}
 	getValue();
 	isBlackjack();
-
-	return *this;
 }

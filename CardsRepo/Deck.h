@@ -34,13 +34,10 @@ public:
 	bool getbFullDeck();
 	void setSizeDeck(int argSize);
 
-protected:
-	list<Card> cards;
-    list<Card>::iterator iterCards;
-
 private:
 	bool bJokers;
 	bool bFullDeck;
+	list<Card> cards;
 	int iSizeDeck;
 
 	void fillDeck(bool bArgJokers);
@@ -51,11 +48,11 @@ class Hand : public Deck {
 		Hand();
 		int getValue();
 		bool isBlackjack();
-		Hand& operator=(Hand&& other);
+		void operator=(Hand other);
 
 
 	private:
-		int iHandValue;
+		int iValue;
 		bool bBlackjack;
 };
 
