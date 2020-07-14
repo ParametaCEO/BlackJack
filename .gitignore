@@ -2,3 +2,7 @@
 DeckTesting/bin/Debug/
 
 DeckTesting/obj/
+
+bin/Debug/
+
+*.o

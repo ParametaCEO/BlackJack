@@ -1,36 +1,24 @@
 #include "player.h"
-#include "deck.h"
-#include "card.h"
-#include <string>
 
-Player::Player(string argName){
-    strName = argName;
+Player::Player(unsigned int argChips)
+{
+    iChips = argChips; //ctor
 }
 
-Player::~Player(){
-
+Player::~Player()
+{
+    //dtor
 }
 
-int Player::GetChips() {
-    return iChips;
+Player::Player(const Player& other)
+{
+    iChips = other.iChips;
 }
 
-void Player::SetChips(int val) {
-    iChips = val;
-}
-
-string Player::GetName(){
-    return strName;
-}
-
-void Player::SetName(string argName){
-    strName = argName;
-}
-
-void Player::Hit(Card argCard){
-    hand.pushCard(argCard);
-}
-
-Hand Player::GetHand(){
-    return hand;
+Player& Player::operator=(const Player& rhs)
+{
+    if (this == &rhs) return *this; // handle self assignment
+    //assignment operator
+    iChips = rhs.iChips;
+    return *this;
 }
