@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1594685074 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/main.cpp
+1594775711 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/main.cpp
 	<iostream>
 	"Deck.h"
 	"Card.h"
@@ -12,8 +12,19 @@
 1594074446 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.h
 	<string>
 
-1594683723 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.h
+1594775503 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.h
 
 1594102224 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.cpp
 	"Card.h"
+
+1594683204 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594775792 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.cpp
+	"player.h"
 

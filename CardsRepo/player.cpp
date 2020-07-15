@@ -22,3 +22,19 @@ Player& Player::operator=(const Player& rhs)
     iChips = rhs.iChips;
     return *this;
 }
+
+unsigned int Player::putBet(unsigned int betSize)
+{
+    if(betSize == 0) return 0;
+
+    if(iChips<betSize) return 0;
+
+    iChips -= betSize;
+
+    return betSize;
+}
+
+unsigned int Player::allIn()
+{
+    return putBet(iChips);
+}
