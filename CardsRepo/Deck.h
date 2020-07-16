@@ -37,11 +37,13 @@ public:
 protected:
     list<Card> cards;
 	list<Card>::iterator iterCards;
+	bool bJokers;
+	int iSizeDeck;
 
 private:
-	bool bJokers;
+
 	bool bFullDeck;
-	int iSizeDeck;
+
 
 	void fillDeck(bool bArgJokers);
 };
@@ -52,6 +54,9 @@ class Hand : public Deck {
 		int getValue();
 		bool isBlackjack();
 		Hand& operator=(Hand&& other);
+        Hand& operator=(const Hand& other);
+
+        string getHandString();
 
 
 	private:
@@ -60,3 +65,5 @@ class Hand : public Deck {
 };
 
 #endif /* DECK_H_ */
+
+

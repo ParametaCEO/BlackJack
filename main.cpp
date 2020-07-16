@@ -35,7 +35,18 @@ int main() {
 
     cout << "I borrow from him all, now my wallet has " << jack.GetChips() << endl;
     cout << "And his wallet has " << johnnie.GetChips() << endl;
+    jack.getBet(30);
+    cout << "I win a bet, now my wallet has " << jack.GetChips() << endl;
+    johnnie.getBet(jack.putBet(30));
+    cout << "I pay some money, now his wallet has " << johnnie.GetChips() << endl;
+    cout << "And my wallet has " << jack.GetChips() << endl;
 
+    Card crd(11,'C');
+    jack.hitCard(crd);
+    crd.setCardValues(1,'S');
+    jack.hitCard(crd);
+
+    cout << "My hand is:\n" << jack.showHand() << endl;
 
 	return 0;
 }

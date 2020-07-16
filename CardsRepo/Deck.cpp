@@ -202,10 +202,35 @@ bool Hand::isBlackjack(){
 }
 
 Hand& Hand::operator=(Hand &&other) {
-	setbJokers(other.getbJokers());
-	setSizeDeck(other.getSizeDeck());
+    if (this == &other) return *this;
+	bJokers =other.bJokers;
+	iSizeDeck = other.iSizeDeck;
     cards = other.cards;
 	getValue();
 	isBlackjack();
-
+    return *this;
 }
+
+Hand& Hand::operator=(const Hand &other) {
+    if (this == &other) return *this;
+	bJokers =other.bJokers;
+	iSizeDeck = other.iSizeDeck;
+    cards = other.cards;
+	getValue();
+	isBlackjack();
+    return *this;
+}
+
+string Hand::getHandString()
+{
+    string strHand;
+    if(getSizeDeck()){
+		for(iterCards = cards.begin(); iterCards != cards.end(); ++iterCards){
+			iterCards->show();
+			strHand += iterCards->getStrCard();
+			strHand += "\n";
+		}
+	}
+	return strHand;
+}
+
