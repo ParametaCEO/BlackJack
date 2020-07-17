@@ -16,7 +16,7 @@ class Player
         unsigned int GetChips() { return iChips; }
         void SetChips(unsigned int val) { iChips = val; }
         bool GetStand() {return stand;}
-        void SetStand(bool val) {stand = val}
+        void SetStand(bool val) {stand = val;}
 
         unsigned int putBet(unsigned int betSize);
         unsigned int allIn();

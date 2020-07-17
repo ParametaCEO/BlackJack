@@ -29,3 +29,21 @@
 1594902628 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.cpp
 	"player.h"
 
+1594946797 source:c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\card.cpp
+	"Card.h"
+
+1594946797 c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\card.h
+	<string>
+
+1594946797 source:c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594946797 c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\deck.h
+	<list>
+	"Card.h"
+
