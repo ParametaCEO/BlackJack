@@ -17,21 +17,53 @@ class Player
         void SetChips(unsigned int val) { iChips = val; }
         bool GetStand() {return stand;}
         void SetStand(bool val) {stand = val;}
+        bool HasWin() {return bWin;}
+        void SetWin(bool val) {bWin = val;}
+
 
         unsigned int putBet(unsigned int betSize);
         unsigned int allIn();
         void getBet(unsigned int betSize);
         void hitCard(const Card argCrd);
         string showHand();
+        bool HasBlackjack();
+        unsigned int GetHandValue();
+        bool DidWin(unsigned int argValue);
 
 
     protected:
         Hand hand;
-
+        unsigned int iChips;
 
     private:
-        unsigned int iChips;
         bool stand;
+        bool bWin;
+};
+
+/***********
+DEALER CLASS
+************/
+
+class Dealer : public Player{
+public:
+    Dealer(unsigned int argChips);
+    Dealer(bool argUnlimited = true);
+    Dealer(const Dealer& other);
+
+    //Getters & Setters
+    void SetUnlimitedChips(bool argUnlimit) { bUnlimitedChips = argUnlimit; }
+    bool GetUnlimitedChips() { return bUnlimitedChips; }
+
+    void ShuffleDeck();
+    void HitPlayer(Player* argPlayer);
+
+
+protected:
+    Deck theDeck;
+    Hand discarted;
+
+private:
+    bool bUnlimitedChips;
 };
 
 #endif // PLAYER_H

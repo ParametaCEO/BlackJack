@@ -16,37 +16,69 @@ using namespace std;
 int main() {
     Player jack(100);
     Player johnnie(jack);
+    Dealer crupier;
+
     cout << "My wallet has " << jack.GetChips() << endl;
     cout << "I bet " << jack.putBet(10) << endl;
     cout << "Now my wallet has " << jack.GetChips() << endl;
-    cout << "Increase my  bet in " << jack.putBet(20) << endl;
-    cout << "Now my wallet has " << jack.GetChips() << endl;
 
-    cout << "His wallet has " << johnnie.GetChips() << endl;
-    cout << "I bet same amount than his " << jack.putBet(johnnie.putBet(30)) << endl;
-    cout << "Now my wallet has " << jack.GetChips() << endl;
-    cout << "And his wallet has " << johnnie.GetChips() << endl;
+    crupier.ShuffleDeck();
+    crupier.HitPlayer(&jack);
+    crupier.HitPlayer(&jack);
 
-    cout << "I bet all " << jack.allIn() << endl;
-    cout << "Now my wallet has " << jack.GetChips() << endl;
-
-    jack = johnnie;
-    johnnie.allIn();
-
-    cout << "I borrow from him all, now my wallet has " << jack.GetChips() << endl;
-    cout << "And his wallet has " << johnnie.GetChips() << endl;
-    jack.getBet(30);
-    cout << "I win a bet, now my wallet has " << jack.GetChips() << endl;
-    johnnie.getBet(jack.putBet(30));
-    cout << "I pay some money, now his wallet has " << johnnie.GetChips() << endl;
-    cout << "And my wallet has " << jack.GetChips() << endl;
-
-    Card crd(11,'C');
-    jack.hitCard(crd);
-    crd.setCardValues(1,'S');
-    jack.hitCard(crd);
 
     cout << "My hand is:\n" << jack.showHand() << endl;
+
+    if(jack.HasBlackjack())
+    {
+        cout << "I got Blackjack!!!\n" << endl;
+        jack.SetStand(true);
+    }
+    cout << "I have: " << jack.GetHandValue() << endl;
+
+    crupier.HitPlayer(&crupier);
+    crupier.HitPlayer(&crupier);
+
+    cout << "Dealer hand is:\n" << crupier.showHand() << endl;
+
+    if(crupier.HasBlackjack())
+    {
+        cout << "Dealer Blackjack!!!\n" << endl;
+        crupier.SetStand(true);
+    }
+    cout << "Dealer has: " << crupier.GetHandValue() << endl;
+
+    while(!jack.GetStand())
+    {
+        crupier.HitPlayer(&jack);
+        if(jack.GetHandValue()>=17)
+        {
+            jack.SetStand(true);
+        }
+    }
+    cout << "My hand is:\n" << jack.showHand() << endl;
+    cout << "I have: " << jack.GetHandValue() << endl;
+
+    while(!crupier.GetStand())
+    {
+        crupier.HitPlayer(&crupier);
+        if(crupier.GetHandValue()>=17)
+        {
+            crupier.SetStand(true);
+        }
+    }
+    cout << "Dealer hand is:\n" << crupier.showHand() << endl;
+    cout << "Dealer has: " << crupier.GetHandValue() << endl;
+
+    jack.DidWin(crupier.GetHandValue());
+    if(jack.HasWin())
+    {
+        cout << "I win!!!\n" << endl;
+    }
+    else
+    {
+        cout << "I loose." << endl;
+    }
 
 	return 0;
 }
