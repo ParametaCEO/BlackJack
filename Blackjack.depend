@@ -80,3 +80,34 @@
 	"player.h"
 	"Deck.h"
 
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/Card.h
+	<string>
+
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/player.cpp
+	"player.h"
+	"Deck.h"
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1596123693 source:/home/jcifuentes/Documentos/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+

@@ -17,14 +17,18 @@ int main() {
     Player jack(100);
     Player johnnie(jack);
     Dealer crupier;
+    unsigned int betPool;
 
     cout << "My wallet has " << jack.GetChips() << endl;
-    cout << "I bet " << jack.putBet(10) << endl;
+    betPool = jack.putBet(10);
+    cout << "I bet " << betPool << endl;
     cout << "Now my wallet has " << jack.GetChips() << endl;
 
     crupier.ShuffleDeck();
     crupier.HitPlayer(&jack);
     crupier.HitPlayer(&jack);
+
+    if(jack.GetHandValue()>=17){ jack.SetStand(true);}
 
 
     cout << "My hand is:\n" << jack.showHand() << endl;
@@ -38,6 +42,8 @@ int main() {
 
     crupier.HitPlayer(&crupier);
     crupier.HitPlayer(&crupier);
+
+    if(crupier.GetHandValue()>=17){ crupier.SetStand(true);}
 
     cout << "Dealer hand is:\n" << crupier.showHand() << endl;
 
@@ -74,10 +80,15 @@ int main() {
     if(jack.HasWin())
     {
         cout << "I win!!!\n" << endl;
+        betPool += crupier.putBet(betPool);
+        jack.getBet(betPool);
+        cout << "Now my wallet has " << jack.GetChips() << endl;
     }
     else
     {
         cout << "I loose." << endl;
+        crupier.getBet(betPool);
+        betPool = 0;
     }
 
 	return 0;
