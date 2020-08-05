@@ -82,7 +82,7 @@ unsigned int Player::GetHandValue()
 
 bool Player::DidWin(unsigned int argValue)
 {
-    if(GetHandValue()<21)
+    if(GetHandValue()<=21)
     {
         if(argValue>21) bWin = true;
         else if(argValue<GetHandValue()) bWin = true;

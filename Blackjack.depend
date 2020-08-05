@@ -111,3 +111,34 @@
 	"Card.h"
 	"player.h"
 
+1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/Card.h
+	<string>
+
+1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
+	"player.h"
+	"Deck.h"
+
+1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1596662675 source:/home/jcifuentes/dev/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+
