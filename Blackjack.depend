@@ -129,7 +129,7 @@
 	<list>
 	"Card.h"
 
-1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
+1596665357 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
 	"player.h"
 	"Deck.h"
 
@@ -141,4 +141,9 @@
 	"Deck.h"
 	"Card.h"
 	"player.h"
+
+1596678053 source:/home/jcifuentes/dev/BlackJack/src/Round.cpp
+	"Round.h"
+
+1596677342 /home/jcifuentes/dev/BlackJack/include/Round.h
 
