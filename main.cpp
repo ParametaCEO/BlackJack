@@ -11,6 +11,7 @@
 #include "Card.h"
 #include "player.h"
 #include "Round.h"
+#include "Screen.h"
 
 using namespace std;
 
@@ -19,30 +20,47 @@ int main() {
     Player johnnie(jack);
     Dealer crupier;
     Round onlyRound;
+    Screen gameScreen("BlackJack: Action>");
+    string responseCmd;
 
-    cout << "My wallet has " << jack.GetChips() << endl;
+    responseCmd = gameScreen.displayScreen("My wallet has 100 - Enter any command to bet 10");
     onlyRound.SetiPot(jack.putBet(10));
-    cout << "I bet " << onlyRound.GetiPot() << endl;
-    cout << "Now my wallet has " << jack.GetChips() << endl;
+    responseCmd = gameScreen.displayScreen("I bet 10");
 
     crupier.ShuffleDeck();
     crupier.HitPlayer(&jack);
+    crupier.HitPlayer(&crupier);
     crupier.HitPlayer(&jack);
+    crupier.HitPlayer(&crupier);
 
-    if(jack.GetHandValue()>=17){ jack.SetStand(true);}
-
-
-    cout << "My hand is:\n" << jack.showHand() << endl;
-
+    gameScreen.SetstrMessage("Delaer Hand is: " + crupier.showHand());
     if(jack.HasBlackjack())
     {
-        cout << "I got Blackjack!!!\n" << endl;
+        responseCmd = gameScreen.displayScreen("I got Blackjack!!! " + jack.showHand());
         jack.SetStand(true);
     }
-    cout << "I have: " << jack.GetHandValue() << endl;
+    else
+    {
+        responseCmd = gameScreen.displayScreen("I have " + jack.showHand());
+    }
 
-    crupier.HitPlayer(&crupier);
-    crupier.HitPlayer(&crupier);
+    do
+    {
+        if(responseCmd == "stand")
+        {
+            jack.SetStand(true);
+        }
+        else if(responseCmd == "hit")
+        {
+            crupier.HitPlayer(&jack);
+            responseCmd = gameScreen.displayScreen("Now I have " + jack.showHand());
+        }
+        else
+        {
+            responseCmd = gameScreen.displayScreen("Action not recognized, please try again");
+        }
+    }while(responseCmd != "stand");
+
 
     if(crupier.GetHandValue()>=17){ crupier.SetStand(true);}
 
@@ -55,18 +73,6 @@ int main() {
     }
     cout << "Dealer has: " << crupier.GetHandValue() << endl;
 
-    while(!jack.GetStand())
-    {
-        crupier.HitPlayer(&jack);
-        if(jack.GetHandValue()>=17)
-        {
-            jack.SetStand(true);
-        }
-    }
-
-
-    cout << "My hand is:\n" << jack.showHand() << endl;
-    cout << "I have: " << jack.GetHandValue() << endl;
 
     while(!crupier.GetStand())
     {
@@ -76,22 +82,20 @@ int main() {
             crupier.SetStand(true);
         }
     }
-    cout << "Dealer hand is:\n" << crupier.showHand() << endl;
-    cout << "Dealer has: " << crupier.GetHandValue() << endl;
+
 
     onlyRound.SetbPush(jack.GetStand() && crupier.GetStand());
 
     jack.DidWin(crupier.GetHandValue());
     if(jack.HasWin())
     {
-        cout << "I win!!!\n" << endl;
+        responseCmd = gameScreen.displayScreen("I win!!! " + jack.showHand());;
         onlyRound.SetiPot(onlyRound.GetiPot() + crupier.putBet(onlyRound.GetiPot()));
         jack.getBet(onlyRound.GetiPot());
-        cout << "Now my wallet has " << jack.GetChips() << endl;
     }
     else
     {
-        cout << "I loose." << endl;
+        responseCmd = gameScreen.displayScreen("I loose " + jack.showHand());
         crupier.getBet(onlyRound.GetiPot());
         onlyRound.SetiPot(0);
     }

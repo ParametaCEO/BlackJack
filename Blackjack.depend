@@ -147,3 +147,10 @@
 
 1596677342 /home/jcifuentes/dev/BlackJack/include/Round.h
 
+1597082397 source:/home/jcifuentes/dev/BlackJack/src/Screen.cpp
+	"Screen.h"
+	<iostream>
+
+1597074107 /home/jcifuentes/dev/BlackJack/include/Screen.h
+	<string>
+

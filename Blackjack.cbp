@@ -41,8 +41,10 @@
 		<Unit filename="CardsRepo/player.cpp" />
 		<Unit filename="CardsRepo/player.h" />
 		<Unit filename="include/Round.h" />
+		<Unit filename="include/Screen.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Round.cpp" />
+		<Unit filename="src/Screen.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
