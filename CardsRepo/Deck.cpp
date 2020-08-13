@@ -228,7 +228,7 @@ string Hand::getHandString()
 		for(iterCards = cards.begin(); iterCards != cards.end(); ++iterCards){
 			iterCards->show();
 			strHand += iterCards->getStrCard();
-			strHand += "\n";
+			strHand += " ";
 		}
 	}
 	return strHand;

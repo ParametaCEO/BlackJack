@@ -117,7 +117,7 @@
 1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/Card.h
 	<string>
 
-1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
+1597279250 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
 	"Card.h"
 	"Deck.h"
 	<list>
@@ -136,11 +136,13 @@
 1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/player.h
 	"Deck.h"
 
-1596662675 source:/home/jcifuentes/dev/BlackJack/main.cpp
+1597086460 source:/home/jcifuentes/dev/BlackJack/main.cpp
 	<iostream>
 	"Deck.h"
 	"Card.h"
 	"player.h"
+	"Round.h"
+	"Screen.h"
 
 1596678053 source:/home/jcifuentes/dev/BlackJack/src/Round.cpp
 	"Round.h"
