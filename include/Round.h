@@ -12,15 +12,15 @@ class Round
         void SetiPot(unsigned int val) { iPot = val; }
         bool GetbPush() { return bPush; }
         void SetbPush(bool val) { bPush = val; }
-        bool GetbStand() { return bStand; }
-        void SetbStand(bool val) { bStand = val; }
+        bool GetbFullStand() { return bFullStand; }
+        void SetbFullStand(bool val) { bFullStand = val; }
 
     protected:
 
     private:
         unsigned int iPot;
         bool bPush;
-        bool bStand;
+        bool bFullStand;
 };
 
 #endif // ROUND_H

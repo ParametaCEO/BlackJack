@@ -4,7 +4,7 @@ Round::Round()
 {
     //ctor
     bPush = false;
-    bStand = false;
+    bFullStand = false;
     iPot = 0;
 }
 

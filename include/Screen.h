@@ -9,6 +9,7 @@ class Screen
 {
     public:
         Screen(string strPrompt);
+        Screen();
         virtual ~Screen();
 
         string GetstrTextTable() { return strTextTable; }

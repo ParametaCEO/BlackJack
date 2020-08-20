@@ -38,6 +38,8 @@
 		</Compiler>
 		<Unit filename="CardsRepo/Card.cpp" />
 		<Unit filename="CardsRepo/Deck.cpp" />
+		<Unit filename="CardsRepo/Game.cpp" />
+		<Unit filename="CardsRepo/Game.h" />
 		<Unit filename="CardsRepo/player.cpp" />
 		<Unit filename="CardsRepo/player.h" />
 		<Unit filename="include/Round.h" />

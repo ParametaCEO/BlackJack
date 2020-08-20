@@ -6,6 +6,12 @@ Screen::Screen(string strPrompt)
     strTextTable = strPrompt;
 }
 
+Screen::Screen()
+{
+    strTextTable = ">";
+}
+
+
 Screen::~Screen()
 {
     //dtor

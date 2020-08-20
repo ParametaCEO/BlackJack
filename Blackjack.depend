@@ -117,7 +117,7 @@
 1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/Card.h
 	<string>
 
-1597279250 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
+1597280102 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
 	"Card.h"
 	"Deck.h"
 	<list>
@@ -129,30 +129,39 @@
 	<list>
 	"Card.h"
 
-1596665357 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
+1597279905 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
 	"player.h"
 	"Deck.h"
 
-1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/player.h
+1597279917 /home/jcifuentes/dev/BlackJack/CardsRepo/player.h
 	"Deck.h"
 
-1597086460 source:/home/jcifuentes/dev/BlackJack/main.cpp
+1597885666 source:/home/jcifuentes/dev/BlackJack/main.cpp
 	<iostream>
 	"Deck.h"
 	"Card.h"
 	"player.h"
 	"Round.h"
 	"Screen.h"
+	"Game.h"
 
-1596678053 source:/home/jcifuentes/dev/BlackJack/src/Round.cpp
+1597798865 source:/home/jcifuentes/dev/BlackJack/src/Round.cpp
 	"Round.h"
 
-1596677342 /home/jcifuentes/dev/BlackJack/include/Round.h
+1597798862 /home/jcifuentes/dev/BlackJack/include/Round.h
 
-1597082397 source:/home/jcifuentes/dev/BlackJack/src/Screen.cpp
+1597882932 source:/home/jcifuentes/dev/BlackJack/src/Screen.cpp
 	"Screen.h"
 	<iostream>
 
-1597074107 /home/jcifuentes/dev/BlackJack/include/Screen.h
+1597882879 /home/jcifuentes/dev/BlackJack/include/Screen.h
 	<string>
+
+1597886274 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Game.cpp
+	"Game.h"
+
+1597884941 /home/jcifuentes/dev/BlackJack/CardsRepo/Game.h
+	<string>
+	"Screen.h"
+	"Round.h"
 
