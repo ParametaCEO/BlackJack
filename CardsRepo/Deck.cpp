@@ -172,6 +172,13 @@ void Deck::setSizeDeck(const int argSize){
     iSizeDeck = argSize;
 }
 
+void Deck::resetDeck()
+{
+    cards.empty();
+    setSizeDeck(0);
+    fillDeck(getbJokers());
+}
+
 /********************************
 *			Hand Class		    	*
 ********************************/

@@ -4,6 +4,7 @@
 #include <string>
 #include "Screen.h"
 #include "Round.h"
+#include "player.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ class Game
 
         int runCommand(string strCmd);
         string displayScreen(string val);
+        void playRound(unsigned int iStage);
 
     protected:
 
@@ -30,6 +32,9 @@ class Game
         string strCommands;
         Screen gameScreen;
         Round gameRound;
+        Player playerOne;
+        Dealer cruppier;
+
 };
 
 #endif // GAME_H

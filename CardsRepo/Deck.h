@@ -26,6 +26,7 @@ public:
 	void pushCard(Card crd);
 	int getSizeDeck();
 	void setShuffled();
+	void resetDeck();
 
 	//Getters & Setters
 	void setbJokers(bool argJokers);
@@ -33,6 +34,7 @@ public:
 	void setbFullDeck(bool argFullDeck);
 	bool getbFullDeck();
 	void setSizeDeck(int argSize);
+
 
 protected:
     list<Card> cards;

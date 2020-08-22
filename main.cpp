@@ -24,7 +24,6 @@ int main()
     do
     {
         cmdCode = Blackjack.runCommand(Blackjack.displayScreen(""));
-        cout << cmdCode << endl;
     }while(cmdCode);
 
 	return cmdCode;

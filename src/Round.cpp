@@ -5,6 +5,7 @@ Round::Round()
     //ctor
     bPush = false;
     bFullStand = false;
+    bDrawed = false;
     iPot = 0;
 }
 

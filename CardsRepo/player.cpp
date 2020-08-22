@@ -70,6 +70,12 @@ string Player::showHand()
     return hand.getHandString();
 }
 
+void Player::throwHand()
+{
+    while(hand.getSizeDeck())
+        hand.getTopCard();
+}
+
 bool Player::HasBlackjack()
 {
     return hand.isBlackjack();
@@ -89,6 +95,13 @@ bool Player::DidWin(unsigned int argValue)
         else bWin = false;
     }
     return bWin;
+}
+
+bool Player::DidPush(unsigned int argValue)
+{
+    if(argValue == GetHandValue())
+        return true;
+    return false;
 }
 
 /***********
@@ -117,10 +130,15 @@ Dealer::Dealer(const Dealer& other) : Player(other)
 
 void Dealer::ShuffleDeck()
 {
-    theDeck.setShuffled();
+   theDeck.setShuffled();
 }
 
 void Dealer::HitPlayer(Player* argPlayer)
 {
     argPlayer->hitCard( theDeck.getTopCard() );
+}
+
+void Dealer::ResetDeck()
+{
+    theDeck.resetDeck();
 }

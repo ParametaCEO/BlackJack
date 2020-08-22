@@ -26,9 +26,11 @@ class Player
         void getBet(unsigned int betSize);
         void hitCard(const Card argCrd);
         string showHand();
+        void throwHand();
         bool HasBlackjack();
         unsigned int GetHandValue();
         bool DidWin(unsigned int argValue);
+        bool DidPush(unsigned int argValue);
 
 
     protected:
@@ -56,6 +58,7 @@ public:
 
     void ShuffleDeck();
     void HitPlayer(Player* argPlayer);
+    void ResetDeck();
 
 
 protected:
