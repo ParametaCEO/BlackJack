@@ -1,0 +1,168 @@
+# depslib dependency file v1.0
+1594908899 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+
+1594946797 
+
+1594908792 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1594074446 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.h
+	<string>
+
+1594908135 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1594102224 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1594683204 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594902628 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.cpp
+	"player.h"
+
+1594946797 source:c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\card.cpp
+	"Card.h"
+
+1594946797 c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\card.h
+	<string>
+
+1594946797 source:c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594946797 c:\users\parameta\onedrive\devcpp-wkspce\blackjack\cardsrepo\deck.h
+	<list>
+	"Card.h"
+
+1594950190 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1594950190 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Card.h
+	<string>
+
+1594950190 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1594950191 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1595047908 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+
+1595046500 /home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1595047480 source:/home/parameta/Documents/DevCPP-WkSpce/BlackJack/CardsRepo/player.cpp
+	"player.h"
+	"Deck.h"
+
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/Card.h
+	<string>
+
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1596118921 source:/home/jcifuentes/Documentos/BlackJack/CardsRepo/player.cpp
+	"player.h"
+	"Deck.h"
+
+1596118921 /home/jcifuentes/Documentos/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1596123693 source:/home/jcifuentes/Documentos/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+
+1596662675 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Card.cpp
+	"Card.h"
+
+1596662675 /home/jcifuentes/dev/BlackJack/CardsRepo/Card.h
+	<string>
+
+1598059234 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Deck.cpp
+	"Card.h"
+	"Deck.h"
+	<list>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1598058866 /home/jcifuentes/dev/BlackJack/CardsRepo/Deck.h
+	<list>
+	"Card.h"
+
+1598062191 source:/home/jcifuentes/dev/BlackJack/CardsRepo/player.cpp
+	"player.h"
+	"Deck.h"
+
+1598062053 /home/jcifuentes/dev/BlackJack/CardsRepo/player.h
+	"Deck.h"
+
+1598062541 source:/home/jcifuentes/dev/BlackJack/main.cpp
+	<iostream>
+	"Deck.h"
+	"Card.h"
+	"player.h"
+	"Round.h"
+	"Screen.h"
+	"Game.h"
+
+1598052494 source:/home/jcifuentes/dev/BlackJack/src/Round.cpp
+	"Round.h"
+
+1598052471 /home/jcifuentes/dev/BlackJack/include/Round.h
+
+1597882932 source:/home/jcifuentes/dev/BlackJack/src/Screen.cpp
+	"Screen.h"
+	<iostream>
+
+1597882879 /home/jcifuentes/dev/BlackJack/include/Screen.h
+	<string>
+
+1598064625 source:/home/jcifuentes/dev/BlackJack/CardsRepo/Game.cpp
+	"Game.h"
+
+1598053244 /home/jcifuentes/dev/BlackJack/CardsRepo/Game.h
+	<string>
+	"Screen.h"
+	"Round.h"
+	"player.h"
+

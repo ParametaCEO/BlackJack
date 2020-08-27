@@ -1,4 +1,7 @@
+DeckTesting/bin/Debug/
 
-*.o
+DeckTesting/obj/
 
 bin/Debug/
+
+*.o
