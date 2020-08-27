@@ -74,7 +74,7 @@ void Game::playRound(unsigned int iStage)
             gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand());
             if(playerOne.GetHandValue()>21)
             {
-                gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU LOOSE :\(");
+                gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU LOOSE");
                 gameRound.SetbFullStand(true);
                 gameRound.SetbDrawed(false);
                 playerOne.throwHand();
@@ -92,16 +92,16 @@ void Game::playRound(unsigned int iStage)
 
             if(cruppier.GetHandValue()>21)
             {
-                gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU WIN :\)");
+                gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU WIN");
             }
             else
             {
                 if(playerOne.DidPush(cruppier.GetHandValue()))
-                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nPUSH :|");
+                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nPUSH");
                 else if(playerOne.DidWin(cruppier.GetHandValue()))
-                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU WIN :\)");
+                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU WIN");
                 else
-                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU LOOSE :\(");
+                    gameScreen.SetstrMessage("Dealer hand: " + cruppier.showHand() + "\nPlayer hand: " + playerOne.showHand() + "\nYOU LOOSE");
             }
             gameRound.SetbFullStand(true);
             gameRound.SetbDrawed(false);
